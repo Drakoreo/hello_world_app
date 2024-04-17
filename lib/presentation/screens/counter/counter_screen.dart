@@ -24,12 +24,13 @@ class _CounterScreenState extends State<CounterScreen> {
             '$clickCounter',
             style: const TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
           ),
-          const Text(
-            'Clics',
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w100),
+          Text(
+            'Clic${clickCounter == 1 ? '' : 's'}',
+            style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w100),
           )
         ],
       )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
 
